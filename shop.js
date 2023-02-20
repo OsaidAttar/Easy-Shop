@@ -18,6 +18,9 @@ let show = document.getElementById('show')
 let oninputs =document.getElementById("range_weight_disp")
 
 
+
+
+
 let products=[
     {image:"assets/image/shop-1.jpg.webp",
   title :"Furry-jacket",
@@ -130,14 +133,19 @@ return checkedValues
 
 page1.onclick=function(){
 let targetProducts = filter(0);
+
 dispaly(targetProducts)
 }
 page2.onclick=function(){
   let targetProducts = filter(1);
+ 
   dispaly(targetProducts)
 }
 page3.onclick=function(){
     let targetProducts = filter(2);
+    let hert2 =document.querySelectorAll('.product-item .bar .heart')
+    console.log(hert2);
+    console.log(hert2.id);
     dispaly(targetProducts)
 }
 
@@ -201,6 +209,8 @@ function filterSizes (arrayofColors ,targetSize){ // [l , M]
 
 function filter(pageNumber){
 let filterdProducts = products.slice(pageNumber*3,(pageNumber+1) *3); 
+let hert2 =document.querySelectorAll('.product-item .bar .heart')
+console.log(hert2.id);
 return filterdProducts;
 }
 
@@ -217,13 +227,14 @@ result+=
         <img src=${elements[i].image} alt="coate" class="w-100">
 
         <div class="lable green ">New</div>
+        <div class="hover">
         <div class="bar text-center  ">
-           <a href=""><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
-          <a href=""> <i class="bar1 fa-regular fa-heart "></i></a>
+           <a href="#"><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
+         <a href='#'> <i class="heart fa-regular fa-heart " onclick="changeColor(${i})"></i></a>
           <a href="#" onclick="addToCart(${elements[i].id})"> <i class="bar1 fa-solid fa-cart-shopping " ></i></a>
      
       </div>
-
+      </div>
 <div class="product-info text-center">
   <div class="prod-name">${elements[i].title}</div>
   <div class="star-ratio">
@@ -268,6 +279,12 @@ var cart;
       alert('the product already exists');
     }
   }
+  let hert2 =document.querySelectorAll('.product-item .bar .heart')
+ console.log(hert2);
+ 
+ function changeColor(i){
 
-
+    hert2[i].classList.toggle("active");
   
+  }
+ 

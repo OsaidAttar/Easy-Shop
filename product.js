@@ -4,6 +4,7 @@ let num =document.getElementById('number')
 let addCart =document.getElementById('addCart')
 let pri = document.getElementById('pri')
 let product = document.getElementById('newz')
+let hert =document.querySelectorAll('.imgs .fa-heart')
 // neg.onclick=function(e){
 //    let count=num.value
 //     console.log(count);
@@ -168,7 +169,7 @@ let product = document.getElementById('newz')
             
         </div>
       
-        <div class="col-md-3 mx-5">
+        <div class="col-md-3 mx-5 allimgs">
             <div class="allImg m-auto">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -198,7 +199,7 @@ let product = document.getElementById('newz')
                   </div>
             </div>
         </div>
-        <div class="col-md-6 ms-5">
+        <div class="col-md-6 ms-5 tit ">
             <div class="infoImg">
             <p>**************************************************************************************</p>
                 <h2>${element[i].title}</h2>
@@ -263,12 +264,12 @@ In Stock
                 <p class="me-5">Availability Size:</p>
                 <div class="stockSize d-flex ">
                   
-                <a href="#"> <label class="size me-1"  onclick="addSize(${i})" >
+                <a href="#" onclick="changeActiveClass(this)"> <label class="size me-1"   >
                     <input type="radio" name="colorRadio" id="red" checked class="xxl me-1">
                     xxl</label></a>
-                 <a href="#"> <label class="size me-1" onclick="addSize(${i+1})">xl</label></a>
-                 <a href="#"> <label class="size me-1" onclick="addSize(${i+2})">m</label></a>
-                 <a href="#">  <label  class="size me-1" onclick="addSize(${i+3})">s</label> </a>
+                 <a href="#" onclick="changeActiveClass(this)"> <label class="size me-1" >xl</label></a>
+                 <a href="#" onclick="changeActiveClass(this)"> <label class="size me-1">m</label></a>
+                 <a href="#" onclick="changeActiveClass(this)">  <label  class="size me-1" >s</label> </a>
                
                   
                 </div>
@@ -287,31 +288,34 @@ In Stock
        
   `
   }
-  console.log(product);
+  // console.log(product);
   product.innerHTML=result;
  
   }
 
-var size=document.getElementsByClassName('size')
-console.log("nymn");
-console.log(size);
-  function addSize(i){
+// var size=document.getElementsByClassName('size')
+// console.log("nymn");
+// console.log(size);
 
-    // size[i].classList.add('active')
-    console.log("addsize function ");
-    console.log(size[i]);
-    for (const s of size) {
-      s.classList.remove("active")  
+
+  function changeActiveClass (i){
+    let targetElement = i 
+    let parent = targetElement.parentElement ; 
+    console.log(parent);
+    let children = parent.children
+    for (const child of children) {
+      child.firstElementChild.classList.remove("active")
     }
+    console.log(targetElement.firstElementChild);
+    targetElement.firstElementChild.classList.add("active")
+    // for (const s of size) {
+    //   s.classList.remove("active")  
+    // }
 
-    size[i].classList.add("active")
-   
-   
-   
-    
-   
-    
-  // size.classList.add('color')
-    
-   
+    // size[i].classList.add("active")
   }
+   for(let i=0; i<hert.length;i++){
+     hert[i].onclick = function(){
+      hert[i].classList.toggle('active');
+     }
+    }

@@ -1,31 +1,9 @@
-let user =document.getElementById('user')
-let email =document.getElementById('email')
-let password = document.getElementById('pass')
-var register =document.getElementById('regi')
-let phone =document.getElementById('phone')
-let city =document.getElementById('city')
-let UNIVERSITY = document.getElementById('UNIVERSITY')
-let age = document.getElementById('age')
-let date =document.getElementById('date')
-let man =document.getElementById('man')
-let woman =document.getElementById('woman')
-let send=document.getElementById('send')
-var arrayLogin
-
-if(JSON.parse(localStorage.getItem('arrayLogin'))==null){
-  arrayLogin=[];
-}
-else{
-var arrayLogin =JSON.parse(localStorage.getItem('arrayLogin'));
-//displayData();
-}
-
-send.onclick=function(){
-  alert(`Thank you, customer
-  We will contact you as soon as possible`)
-}
 
 let navbar =document.getElementById('navbar')
+let hert1 =document.querySelectorAll('.hover .fa-heart')
+console.log(hert1);
+
+
 window.addEventListener("scroll",function(){
     if(window.scrollY > 50){
        navbar.classList.add('new-bg-color')
@@ -38,135 +16,83 @@ window.addEventListener("scroll",function(){
     }
     
 })
-email.onkeyup=function(){
-  if(email.value!='' ){
-    
-        console.log("yes");
-        register.removeAttribute('disabled')
-      }
-    }
- 
- 
-
-
-function addAccount(){
-  var registers =
-  {
-    user:user.value,
-    email:email.value,
-    password:password.value
+for(let i=0; i<hert1.length;i++){
+  hert1[i].onclick = function(){
+    hert1[i].classList.toggle('active');
   }
+}
 
-  arrayLogin.push(registers)
-  localStorage.setItem('arrayLogin',JSON.stringify(arrayLogin))
- 
-  Swal.fire({
-    position: 'center',
-    icon: 'success',
-    title: 'Courses added successfully',
-    showConfirmButton: false,
-    timer: 700
+  document.querySelector('.top').style.opacity='0'
+  window.addEventListener('scroll',function(){
+       let aboutPos=this.window.document.getElementById('project-jacket').offsetTop
+       console.log(aboutPos);
+      if(window.scrollY > aboutPos){
+      document.querySelector('.top'). style.opacity='1'
+      document.querySelector('.top').style.transition='.7s'
+      }
+      else{
+          document.querySelector('.top').style.opacity='0'
+          document.querySelector('.top').style.transition='.7s' 
+      }
   })
- }
-
- register.onclick=function(){
- 
-  addAccount()
+  let topbtn=document.querySelector('.top button')
+  topbtn.addEventListener('click',function(e){
+      e.preventDefault()
+      window.scroll({
+          top:0,
+          behavior:'smooth'
+      })
+  })
+  let body =document.body
+  body.style.overflow="hidden"
+  document.querySelector('.loading').style.opacity='1'
+  document.querySelector('.loading').style.visibility='visible'
+  document.querySelector('.loading').style.transition='.7s'
   
-  clearInputs()
-  register.classList.remove('disabled')
- }
- function clearInputs(){
-  user.value='';
-  email.value='';
-  password.value='';
-  phone.value='';
-  city.value='';
-  UNIVERSITY.value='';
-  age.value=''
- 
-}
+  
+  window.addEventListener('load',function(){
+      this.setTimeout(function(){
+          document.querySelector('.loading').style.opacity='0'
+          document.querySelector('.loading').style.visibility='hidden'
+          document.querySelector('.loading').style.transition='.7s'
+          body.style.overflow='auto'
+  
+      },1000)
+  })
+  function countdownTimeStart(){
 
-
-let products=[
-  {image:"assets/image/shop-1.jpg.webp",
-title :"Furry-jacket",
-prise:"59",
-color :"Blacks",
-size:"XXL",
-id:0,
-total:"59"
-},
-{image:"assets/image/shop-2.jpg.webp",
-title :"Women's sholder bag",
-prise:"49",
-color:"Blacks",
-size:"M",
-id:1,
-total:"49"
-}
-,{image:"assets/image/shop-3.jpg.webp",
-title :"Colorful chiffon dress",
-prise:"59",
-color:"Whites",
-size:"L",
-id:2,
-total:"59"
-}
-,{image:"assets/image/shop-4.jpg.webp",
-title :"Dark wash Xavi jeans",
-prise:"59",
-color:"Blacks",
-size:"XL",
-id:3,
-total:"59"
-}
-,{image:"assets/image/shop-5.jpg.webp",
-title :"Ankle-cuff sandals",
-prise:"49",
-color:"Yellows",
-size:"L",
-id:4,
-total:"49"
-}
-,{image:"assets/image/shop-6.jpg.webp",
-title :"Water resistant zips backpack",
-prise:"59",
-color:"Blacks",
-size:"L",
-id:5,
-total:"59"
-}
-,{image:"assets/image/shop-7.jpg.webp",
-title :"Pandent earring",
-prise:"59",
-color:"Blues",
-size:"S",
-id:6,
-total:"59"
-}
-,{image:"assets/image/shop-8.jpg.webp",
-title :"Silk skarf",
-prise:"59",
-color:"Reds",
-size:"S",
-id:7,
-total:"59"
-}
-,{image:"assets/image/shop-9.jpg.webp",
-title :"Women tall boats",
-prise:"59",
-color:"Blacks",
-size:"XL",
-id:8,
-total:"59"
-}
-]
-
-let cart;
-if(localStorage.getItem('cart')){
-  cart=JSON.parse(localStorage.getItem('cart'))}
-  else
-  cart=[];
-
- 
+    var countDownDate = new Date("2023-2-24 04:34:10").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+        // Get todays date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+        
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days =  Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Output the result in an element 
+          document.getElementById("day").innerHTML =  days;
+    document.getElementById("hour").innerHTML =  hours;
+    document.getElementById("min").innerHTML =  minutes;
+    document.getElementById("sec").innerHTML =  seconds;
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            alert("This offer has already ended")
+            document.getElementById("time").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+  
+    }
+  
+  countdownTimeStart()
