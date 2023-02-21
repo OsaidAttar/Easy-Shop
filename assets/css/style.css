@@ -222,6 +222,9 @@ nav{
     }
 }
 @media screen and (max-width:755px){
+    nav{
+        width: 102%;
+    }
     nav .navbar-collapse {
         position: relative;
         
