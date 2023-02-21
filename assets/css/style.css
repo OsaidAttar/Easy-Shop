@@ -221,7 +221,7 @@ nav{
         margin-top: 7%;
     }
 }
-@media screen and (max-width:755px){
+@media screen and (max-width:756px){
     nav{
         width: 102%;
     }
