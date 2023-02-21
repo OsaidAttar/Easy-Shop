@@ -501,12 +501,7 @@ img{
     cursor: pointer;
 }
 }
-@media screen and (max-width:575px){
-    .time{
-        margin-right: -10%;
-        margin-left: -10%;
-    }
-}
+
 /*end new product*/
 
 
@@ -682,7 +677,16 @@ position: relative;
     .discount .img .left-img img{
         width: 100%;
     }
-}
+   
+        .time{
+            margin-right: -10%;
+            margin-left: -22%;
+        }
+        .discount .right-img .time span{
+            font-size: 19px;
+        }
+    }
+
 /* end discount */
 /* start service */
 .services .service-icon{

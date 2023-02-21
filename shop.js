@@ -143,9 +143,7 @@ page2.onclick=function(){
 }
 page3.onclick=function(){
     let targetProducts = filter(2);
-    let hert2 =document.querySelectorAll('.product-item .bar .heart')
-    console.log(hert2);
-    console.log(hert2.id);
+   
     dispaly(targetProducts)
 }
 
@@ -209,8 +207,7 @@ function filterSizes (arrayofColors ,targetSize){ // [l , M]
 
 function filter(pageNumber){
 let filterdProducts = products.slice(pageNumber*3,(pageNumber+1) *3); 
-let hert2 =document.querySelectorAll('.product-item .bar .heart')
-console.log(hert2.id);
+
 return filterdProducts;
 }
 
@@ -230,7 +227,7 @@ result+=
         <div class="hover">
         <div class="bar text-center  ">
            <a href="#"><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
-         <a href='#'> <i class="heart fa-regular fa-heart " onclick="changeColor(${i})"></i></a>
+         <a href='#'> <i class="heart fa-regular fa-heart " onclick="changeColor(${i})" ></i></a>
           <a href="#" onclick="addToCart(${elements[i].id})"> <i class="bar1 fa-solid fa-cart-shopping " ></i></a>
      
       </div>
@@ -279,11 +276,15 @@ var cart;
       alert('the product already exists');
     }
   }
+  
   let hert2 =document.querySelectorAll('.product-item .bar .heart')
- console.log(hert2);
+console.log(" this heart");
+console.log(hert2);
  
  function changeColor(i){
-
+  let hert2 =document.querySelectorAll('.product-item .bar .heart')
+console.log(i);
+console.log(hert2[i]);
     hert2[i].classList.toggle("active");
   
   }
