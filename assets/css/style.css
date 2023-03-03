@@ -677,6 +677,9 @@ position: relative;
     .discount .img{
         flex-direction: column;
     }
+    .discount .right-img .circule{
+        right: 97px;
+    }
     .discount .img .left-img img{
         width: 100%;
     }
@@ -1253,6 +1256,10 @@ margin-bottom: 10px;
         left: 20%;
         top: 1px; 
     }
+    .product-item .bar{
+        width: 80px;
+        padding-left: 5%;
+    }
     
  }
     
@@ -1778,7 +1785,7 @@ footer .row .col-md-2 .instagram::after{
     top: 0;
     right: 0;
     
-     width: 100%;
+     width: 105%;
      height: 330px;
       background-color: rgba(255, 255, 255, 0.9);;
       opacity: 0;
