@@ -61,7 +61,7 @@ for(let i=0; i<hert1.length;i++){
   })
   function countdownTimeStart(){
 
-    var countDownDate = new Date("2023-2-24 04:34:10").getTime();
+    var countDownDate = new Date("2023-3-16 04:34:10").getTime();
     
     // Update the count down every 1 second
     var x = setInterval(function() {
