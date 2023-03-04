@@ -1,21 +1,21 @@
 
 let navbar =document.getElementById('navbar')
-let hert1 =document.querySelectorAll('.hover .fa-heart')
-console.log(hert1);
 
 
 window.addEventListener("scroll",function(){
     if(window.scrollY > 50){
-       navbar.classList.add('new-bg-color')
-       navbar.style.transition='1s'
+        navbar.classList.add('new-bg-color')
+        navbar.style.transition='1s'
     }
     else{
         navbar.classList.remove('new-bg-color')
         navbar.style.transition='1s'
-
+        
     }
     
 })
+let hert1 =document.querySelectorAll('.hover .fa-heart')
+console.log(hert1);
 for(let i=0; i<hert1.length;i++){
   hert1[i].onclick = function(){
     hert1[i].classList.toggle('active');

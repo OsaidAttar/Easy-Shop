@@ -5,6 +5,21 @@ let addCart =document.getElementById('addCart')
 let pri = document.getElementById('pri')
 let product = document.getElementById('newz')
 let hert =document.querySelectorAll('.bar .fa-heart')
+let navbar =document.getElementById('navbar')
+
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY > 50){
+        navbar.classList.add('new-bg-color')
+        navbar.style.transition='1s'
+    }
+    else{
+        navbar.classList.remove('new-bg-color')
+        navbar.style.transition='1s'
+        
+    }
+    
+})
 console.log(hert);
 // neg.onclick=function(e){
 //    let count=num.value

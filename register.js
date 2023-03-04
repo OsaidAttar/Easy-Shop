@@ -50,10 +50,11 @@ date.addEventListener('keyup', function(event){
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: 'Courses added successfully',
+          title: 'Courses added successfully and go to the page Login',
           showConfirmButton: false,
-          timer: 700
+          timer: 2000
         })
+      
        }
         register.onclick=function(){
  
@@ -72,6 +73,21 @@ date.addEventListener('keyup', function(event){
   age.value=''
  
 }
+let navbar =document.getElementById('navbar')
+
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY > 50){
+        navbar.classList.add('new-bg-color')
+        navbar.style.transition='1s'
+    }
+    else{
+        navbar.classList.remove('new-bg-color')
+        navbar.style.transition='1s'
+        
+    }
+    
+})
 // let products=[
 //     {image:"assets/image/shop-1.jpg.webp",
 //   title :"Furry-jacket",

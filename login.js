@@ -1,6 +1,21 @@
 let email =document.getElementById('email')
 let password = document.getElementById('pass')
 let login = document.getElementById('log')
+let navbar =document.getElementById('navbar')
+
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY > 50){
+        navbar.classList.add('new-bg-color')
+        navbar.style.transition='1s'
+    }
+    else{
+        navbar.classList.remove('new-bg-color')
+        navbar.style.transition='1s'
+        
+    }
+    
+})
 let statuse = false
 var arrayLogin
 if(localStorage.getItem('arrayLogin')){

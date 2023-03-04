@@ -223,3 +223,18 @@ confirmb.onclick=function(){
         timer: 1500
       })
 }
+let navbar =document.getElementById('navbar')
+
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY > 50){
+        navbar.classList.add('new-bg-color')
+        navbar.style.transition='1s'
+    }
+    else{
+        navbar.classList.remove('new-bg-color')
+        navbar.style.transition='1s'
+        
+    }
+    
+})
