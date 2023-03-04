@@ -823,7 +823,7 @@ col-md-3 .product-item{
     bottom: 45%;
 
 }
-.product-item .bar a .bar1{
+/* .product-item .bar a .bar1{
     background-color:white;
     color:#212529;
     margin-left: 3px;
@@ -835,8 +835,8 @@ col-md-3 .product-item{
     border-radius: 50%;
     transition: .5s;
     
-}
-.product-item .bar p i{
+} */
+.product-item .bar a i{
     background-color: white;
     color: #212529;
     margin-left: 3px;
@@ -858,10 +858,14 @@ col-md-3 .product-item{
     
 
 }
-.product-item .bar .heart.active{
+.bar .fa-heart.active{
     background-color: #ca1515;
     color: white ;
 }
+/* .product-item .bar .heart.active{
+    background-color: #ca1515;
+    color: white ;
+} */
 
 .product-item .product-info .star-ratio i{
     font-size: 10px;

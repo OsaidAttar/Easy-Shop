@@ -4,7 +4,8 @@ let num =document.getElementById('number')
 let addCart =document.getElementById('addCart')
 let pri = document.getElementById('pri')
 let product = document.getElementById('newz')
-let hert =document.querySelectorAll('.imgs .fa-heart')
+let hert =document.querySelectorAll('.bar .fa-heart')
+console.log(hert);
 // neg.onclick=function(e){
 //    let count=num.value
 //     console.log(count);
@@ -316,6 +317,7 @@ In Stock
   }
    for(let i=0; i<hert.length;i++){
      hert[i].onclick = function(){
+      let hert =document.querySelectorAll('.bar .fa-heart')
       hert[i].classList.toggle('active');
      }
     }
