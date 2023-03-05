@@ -671,7 +671,7 @@ img{
     
     .project-jacket{
         width: 101%;
-        height: 30vh;
+        height: 25vh;
     }
     .project-jacket .carousel-item span {
         font-size: 13px;
@@ -690,14 +690,14 @@ position: relative;
 @media screen and (max-width:575px){
     .project-jacket{
         width: 100%;
-        height: 24vh;
+        height: 20vh;
     }
     .project-jacket .carousel-item span {
         font-size: 13px;
         margin-top: 0;
     }
     .project-jacket .carousel-item h1{
-        font-size: 42px;
+        font-size: 25px;
     }
     .project-jacket .carousel-indicators{
 position: relative;
@@ -1484,7 +1484,7 @@ margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
         position: static;
-        width: 68%;
+        width: 79%;
     }
     .allimgs{
         width: 100%;
