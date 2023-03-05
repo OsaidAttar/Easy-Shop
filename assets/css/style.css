@@ -543,7 +543,7 @@ font-size: 46px;
 @media screen and (min-width:576px) and (max-width:991px){
   
     .New-product{
-        margin-top: 24%;
+        margin-top: 10%;
      
     }
     .New-product h1{
@@ -581,7 +581,7 @@ img{
 }
 @media screen and (max-width:575px){
     .New-product{
-        margin-top: 58%;
+        margin-top: 10%;
      
     }
     .New-product h1{
