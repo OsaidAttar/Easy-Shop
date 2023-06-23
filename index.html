@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Shop</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+  <div class="loading">
+    <span class="loader"></span>
+  </div>
+  <div class="top">
+    <button class="border-0 bg-transparent"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+  
+    <nav class="navbar navbar-expand-lg fixed-top"id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/image/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product-details.html">Product-Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="iconLog w-35 d-flex">
+              <div class="log me-3">
+                <a href="login.html">Login</a>
+                <a href="Register.html">Register</a>
+              </div>
+              <div class="icons mx-4">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="tip" val="1">2</div>
+                <a href="#"><i class="fa-regular fa-clipboard"></i></a>
+                <div class="tip" val="2">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+      <header>
+        
+        <div class="images">
+          
+            <div class="big-img">
+                <div class="content">
+                    <h2>Women’s fashion</h2>
+                    <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida.</p>
+                    <a href="#">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="small-imgs col-sm-12">
+                <div class="img img1">
+                    <div class="content">
+                        <h2>Men’s fashion</h2>
+                        <p>358 items</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="img img2">
+                    <div class="content">
+                        <h2>Kid’s fashion</h2>
+                        <p>273 items</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="img img3">
+                    <div class="content">
+                        <h2>Cosmetics</h2>
+                        <p>159 items</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                    </div>
+                <div class="img img4">
+                    <div class="content">
+                        <h2>Accessories</h2>
+                        <p>792 items</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </header>
+       <!-- End header -->
+    
+       <!-- Start New product -->
+       <section class="New-product">
+        <div class="container">
+            <div class="Title">
+                <h1><span>NEW </span>PRODUCT</h1>
+            </div>
+            <ul class="nav nav-tabs justify-content-end border-0" id="myTab" role="tablist">
+                <li class="nav-item border-0" role="presentation">
+                  <button class="nav-link all active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All-tab-pane" type="button" role="tab" aria-controls="All-tab-pane" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item border-0" role="presentation">
+                  <button class="nav-link " id="Women-tab" data-bs-toggle="tab" data-bs-target="#Women-tab-pane" type="button" role="tab" aria-controls="Women-tab-pane" aria-selected="false">Women's</button>
+                </li>
+                <li class="nav-item border-0" role="presentation">
+                  <button class="nav-link " id="Men-tab" data-bs-toggle="tab" data-bs-target="#Men-tab-pane" type="button" role="tab" aria-controls="Men-tab-pane" aria-selected="false">Men's</button>
+                </li>
+                <li class="nav-item border-0" role="presentation">
+                  <button class="nav-link " id="Kids-tab" data-bs-toggle="tab" data-bs-target="#kids-tab-pane" type="button" role="tab" aria-controls="kids-tab-pane" aria-selected="false">Kid's</button>
+                </li>
+                <li class="nav-item border-0" role="presentation">
+                  <button class="nav-link " id="Accessories-tab" data-bs-toggle="tab" data-bs-target="#Accessories-tab-pane" type="button" role="tab" aria-controls="Accessories-tab-pane" aria-selected="false">Accessories</button>
+                </li>
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link" id="Cosmetics-tab" data-bs-toggle="tab" data-bs-target="#Cosmetics-tab-pane" type="button" role="tab" aria-controls="Cosmetics-tab-pane" aria-selected="false">Cosmetics</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="All-tab-pane" role="tabpanel" aria-labelledby="All-tab" tabindex="0">
+    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 pt-5">
+                        
+                      <div class="product-item position-relative">
+                        <div class="labelNew">New</div>
+                        <img src="assets/image/product1.webp" class="m-100"/>
+                        <div class="hover">
+                            <ul class="d-flex">
+                              <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                              <li><i class="fa-regular fa-heart" id="he1"></i></li>
+                              <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Buttons tweed blazer</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product2.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="he2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Flowy striped skirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 49.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <div class="labelNewx">OUT OF STOCK</div>
+                        <img src="assets/image/product3.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="he3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Cotton T-Shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product4.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="he4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between align-items-center p=2">
+                          <div class="desc">
+                            <h3>Slim striped pocket shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product5.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="he5"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between align-items-center p=2">
+                          <div class="desc">
+                            <h3>Fit micro corduroy shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product6.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="he6"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Tropical Kimono</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product7.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="he7"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Contrasting sunglasses</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product8.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="he8"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                         </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Water resistant backpack</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade show " id="Women-tab-pane" role="tabpanel" aria-labelledby="Women-tab" tabindex="0">
+    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <div class="labelNew">New</div>
+                        <img src="assets/image/product1.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hw1"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Buttons tweed blazer</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product6.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hw2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Tropical Kimono</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product7.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="hw3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Contrasting sunglasses</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <div class="labelNewx">OUT OF STOCK</div>
+                        <img src="assets/image/product3.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hw4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Cotton T-Shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade show " id="Men-tab-pane" role="tabpanel" aria-labelledby="Men-tab" tabindex="0">
+    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product2.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hm1"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Flowy striped skirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 49.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product8.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hm2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                         </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Water resistant backpack</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product5.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hm3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Fit micro corduroy shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product4.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hm4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Slim striped pocket shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade show " id="kids-tab-pane" role="tabpanel" aria-labelledby="kids-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product5.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="hk1"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Fit micro corduroy shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product6.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="hk2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Tropical Kimono</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product7.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="hk3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between align-items-center p=2">
+                          <div class="desc">
+                            <h3>Contrasting sunglasses</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product8.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hk4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Water resistant backpack</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade show " id="Accessories-tab-pane" role="tabpanel" aria-labelledby="Accessories-tab" tabindex="0">
+    
+                  <div class="row">
+                    
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <div class="labelNewx">OUT OF STOCK</div>
+                        <img src="assets/image/product3.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="ha1"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Cotton T-Shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product6.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="ha2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between align-items-center p=2">
+                          <div class="desc">
+                            <h3>Tropical Kimono</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product7.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="ha3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Contrasting sunglasses</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product8.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart" id="ha4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Water resistant backpack</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade show " id="Cosmetics-tab-pane" role="tabpanel" aria-labelledby="Cosmetics-tab" tabindex="0">
+    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product4.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hc1"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Slim striped pocket shirt</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product6.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hc2"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Tropical Kimono</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product7.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hc3"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Contrasting sunglasses</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$ 59.0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 pt-5">
+                      <div class="product-item position-relative">
+                        <img src="assets/image/product8.webp" class="m-100"/>
+                        <div class="hover">
+                          <ul class="d-flex">
+                            <li><i class="fa-solid fa-up-right-and-down-left-from-center"></i></li>
+                            <li><i class="fa-regular fa-heart"id="hc4"></i></li>
+                            <li><a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                          </ul>
+                      </div>
+                        <div class="info d-flex justify-content-between  align-items-center p=2">
+                          <div class="desc">
+                            <h3>Water resistant backpack</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p><span class="red">$ 49.0</span>  <span class="grey">$ 59.0</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+                </div>
+                
+              </div>
+        </div>
+       </section>
+       <!-- End New product -->
+    
+       <!-- Start project jacket -->
+       <section class="project-jacket" id="project-jacket">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <span>THE CHLOE COLLECTION</span>
+                <h1>The Project Jacket</h1>
+                <a href="#">SHOP NOW</a>
+              </div>
+              <div class="carousel-item">
+                <span>THE CHLOE COLLECTION</span>
+                <h1>The Project Jacket</h1>
+                <a href="#">SHOP NOW</a>
+              </div>
+              <div class="carousel-item">
+                <span>THE CHLOE COLLECTION</span>
+                <h1>The Project Jacket</h1>
+                <a href="#">SHOP NOW</a>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+          </div>
+        </div>
+       </section>
+           <!-- start hot trend-->
+    <section class="hot-trend">
+        <div class="container ">
+            <div class="trend ">
+                <div class="row  ">
+                     <div class=" col-lg-4 col-ms-4 col-sm-6">
+                <div class="sectionTitel py-4">
+                    <h4><span>HOT TR</span>END</h4>
+                </div>
+                <div class="trend-item d-flex mb-4">
+                    <div class="trend-img ">
+                        <img src="assets/image/hot trend/ht-1.jpg.webp"/>
+                    </div>
+                    <div class="trend-content ms-4 ">
+                        <h6>Chain bucket bag</h6>
+                        <div class="rating text-warning">
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                         <div class="product-price">$ 59.0</div>
+                    </div>
+                </div>
+                <div class="trend-item d-flex mb-4">
+                    <div class="trend-img ">
+                        <img src="assets/image/hot trend/ht-2.jpg.webp"/>
+                    </div>
+                    <div class="trend-content ms-4 ">
+                        <h6>Pendant earrings</h6>
+                        <div class="rating text-warning">
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                         <div class="product-price">$ 59.0</div>
+                    </div>
+                </div>
+                <div class="trend-item d-flex mb-4 ">
+                    <div class="trend-img ">
+                        <img src="assets/image/hot trend/ht-3.jpg.webp"/>
+                    </div>
+                    <div class="trend-content ms-4 ">
+                        <h6>Cotton T-Shirt</h6>
+                        <div class="rating text-warning">
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                         <div class="product-price">$ 59.0</div>
+                    </div>
+                </div>
+                     </div>
+                     <div class=" col-lg-4 col-ms-4 col-sm-6">
+                        <div class="sectionTitels py-4">
+                            <h4><span>BEST S</span>ELLER</h4>
+                        </div>
+                        <div class="trend-item d-flex mb-4">
+                            <div class="trend-img ">
+                                <img src="assets/image/hot trend/bs-1.jpg.webp"/>
+                            </div>
+                            <div class="trend-content ms-4 ">
+                                <h6>Cotton T-Shirt</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                 <div class="product-price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex mb-4">
+                            <div class="trend-img ">
+                                <img src="assets/image/hot trend/bs-2.jpg.webp"/>
+                            </div>
+                            <div class="trend-content ms-4 ">
+                                <h6>Zip-pockets pebbled tote<br>
+                                    briefcase</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                 <div class="product-price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex mb-4 ">
+                            <div class="trend-img ">
+                                <img src="assets/image/hot trend/bs-3.jpg.webp"/>
+                            </div>
+                            <div class="trend-content ms-4 ">
+                                <h6>Round leather bag</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                 <div class="product-price">$ 59.0</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class=" col-lg-4 col-ms-4 col-sm-6">
+                                <div class="sectionTitelss py-4">
+                                    <h4><span>FEATU</span>RE</h4>
+                                </div>
+                                <div class="trend-item d-flex mb-4">
+                                    <div class="trend-img ">
+                                        <img src="assets/image/hot trend/f-1.jpg.webp"/>
+                                    </div>
+                                    <div class="trend-content ms-4 ">
+                                        <h6>Bow wrap skirt</h6>
+                                        <div class="rating text-warning">
+                                            <i class="fa-solid fa-star "></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                         <div class="product-price">$ 59.0</div>
+                                    </div>
+                                </div>
+                                <div class="trend-item d-flex mb-4">
+                                    <div class="trend-img ">
+                                        <img src="assets/image/hot trend/f-2.jpg.webp"/>
+                                    </div>
+                                    <div class="trend-content ms-4 ">
+                                        <h6>Metallic earrings</h6>
+                                        <div class="rating text-warning">
+                                            <i class="fa-solid fa-star "></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                         <div class="product-price">$ 59.0</div>
+                                    </div>
+                                </div>
+                                <div class="trend-item d-flex mb-4 ">
+                                    <div class="trend-img ">
+                                        <img src="assets/image/hot trend/f-3.jpg.webp"/>
+                                    </div>
+                                    <div class="trend-content ms-4 ">
+                                        <h6>Flap cross-body bag</h6>
+                                        <div class="rating text-warning">
+                                            <i class="fa-solid fa-star "></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                         <div class="product-price">$ 59.0</div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hot  trend -->
+    <!-- start discount -->
+    <section class="discount py-5">
+        <div class="container"> 
+          <div class="img d-flex">
+            <div class="col-lg-6">
+            <div class="left-img ">
+                <img src="assets/image/discount/discount.jpg.webp"/>
+            </div>
+           </div>
+            <div class="col-lg-6 aa">
+            <div class="right-img p-5">
+                <div class="right-top ">
+                    <span>DISCOUNT</span>
+                    <h2>Summer 2023</h2>
+                    <h5>SALE<span>  50%</span></h5>
+                </div>
+                <div class="circule"></div>
+                <div class="time mt-5 d-flex">
+                    <div class="days p-4"><p><span id="day">4</span>Days</p></div>
+                    <div class="hours p-4"><p><span id="hour">08</span>Hour</p></div>
+                    <div class="minutes p-4"><p><span id="min">08</span>Min</p></div>
+                    <div class="seconds p-4"><p><span id="sec">18</span>Sec</p></div>
+                </div>
+                <!-- <div class="shop-now">
+                    <a href="#"><button> SHOP NOW</button> </a>
+                </div> -->
+                <a href="#" id="soon"> SHOP NOW</a>
+            </div>
+          
+          </div>
+        <div  class="test" id="test2" >
+          
+
+        </div>
+        </div>
+       
+        </div>
+    </section>
+    <!-- end discount -->
+    <!-- start services  -->
+     <section class="services ms-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="services-item d-flex">
+                        <div class="service-icon  ">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <div class="service-content ms-3 ">
+                            <h6>Free Shipping</h6>
+                            <p>For all oder over $99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="services-item d-flex">
+                        <div class="service-icon  ">
+                            <i class="fa-regular fa-money-bill-1"></i>
+                        </div>
+                        <div class="service-content ms-3 ">
+                            <h6>Money Back Guarantee</h6>
+                            <p>If good have Problems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="services-item d-flex">
+                        <div class="service-icon  ">
+                            <i class="fa-solid fa-life-ring"></i>
+                        </div>
+                        <div class="service-content ms-3 ">
+                            <h6>Online Support 24/7</h6>
+                            <p>Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="services-item d-flex">
+                        <div class="service-icon  ">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div class="service-content ms-3 ">
+                            <h6>Payment Secure</h6>
+                            <p>100% secure payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end services -->
+
+   
+       <footer>
+        <div class="col-md-12 py-5">
+          <div class=" row d-flex ">
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-1.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-2.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-3.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-4.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-5.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-6.jpg" alt="" />
+                </div>
+                <div class="insta d-flex flex-column">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container m-auto">
+          <div class="row d-flex">
+            <div class="col-md-3 ">
+              <div class="footer-about my-5 ">
+                <div class="foot-img">
+                  <a href="#">
+                    <img src="assets/image/logo.png" alt="" />
+                  </a>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt cilisis.
+                </p>
+                <div class="footer-payment d-flex me-3">
+                  <div class="row">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-1.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-2.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-3.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-4.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-5.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+      
+                
+              </div>
+            </div>
+            
+            <div class="col-md-2 text-start my-4 ">
+              <div class="footer__widget ">
+                <h6 class="text-start">Quick links</h6>
+                <ul class="p-0 ">
+                 <a href="#"> <li>About</li></a>
+                 <a href="#"> <li>Blogs</li></a>
+                <a href="#">  <li>Contact</li></a>
+                 <a href="#"> <li>FAQ</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 text-start my-4">
+              <div class="footer__widget   ">
+                <h6 class="text-start">ACCOUNT</h6>
+                <ul class="p-0 ">
+                 <a href="#"> <li>My Account</li></a>
+                <a href="#">  <li>Orders Tracking</li></a>
+                 <a href="#"> <li>Checkout</li></a>
+                <a href="#">  <li>Wishlist</li></a>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-md-3 text-start my-4">
+              <div class="footer__widget  ms-2 me-4">
+                <h6 class="text-start">NEWSLETTER</h6>
+               <form action="#">
+                <input type="text" placeholder="Email" >
+                <button class="site-btn" type="submit">Subscribe</button>
+               </form>
+               <div class="icon">
+               <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+               <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+               <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+               <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+      
+               </div>
+               
+              </div>
+            </div>
+            
+          
+      
+          </div>
+          <hr>
+          <p class="par">Copyright &copy;  2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">teamEasyShop</a></p>
+        </div>
+      </footer>
+    
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+</body>
+</html>

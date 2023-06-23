@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Shop</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules//bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.css"
+     integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top "id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/image/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product-details.html">Product-Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="iconLog w-35 d-flex">
+              <div class="log me-3">
+                <a href="login.html">Login</a>
+                <a href="Register.html">Register</a>
+              </div>
+              <div class="icons mx-4">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="tip" val="1">2</div>
+                <a href="#"><i class="fa-regular fa-clipboard"></i></a>
+                <div class="tip" val="2">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="product-details py-5">
+        <div class="container ">
+        <div class="col-md-12 py-5">
+            <i class="fa-solid fa-house"></i>
+            <a href="product-details.html" class="home mx-2 text-decoration-none text">Product-details</a>
+            <span class="mx-1 span-shop">ESSENTIAL STRUCTURED BLAZER</span>
+        </div>
+        <div class="col-md-12 py-4 det ">
+             <div class="row" id="newz" >
+             <!-- <div class="imgd" >
+                <div class="col-md-1" >
+                <div class="img-details">
+                    <img src="assets/image/thumb-1.jpg" class="py-2" alt="">
+                    <img src="assets/image/thumb-2.jpg" class="py-2" alt="">
+                    <img src="assets/image/thumb-3.jpg" class="py-2" alt="">
+                    <img src="assets/image/thumb-4.jpg" class="py-2" alt="">
+
+                </div>
+            </div>
+          </div>
+            <div class="col-md-3 mx-5">
+                <div class="allImg m-auto">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/image/thumb-1.jpg" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/image/discount/product-1.jpg.webp" class="object-fit-cover w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/image/thumb-3.jpg"  alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/image/thumb-4.jpg" " class="object-fit-none" alt="...">
+                            
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                          <span class="visually-hidden bg-danger">Previous</span>
+                        </button>
+                        <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon text-dark bg-dark" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6 ms-5">
+                <div class="infoImg">
+                    <h2>ESSENTIAL STRUCTURED BLAZER</h2>
+                    <p>Brand: SKMEIMore Men Watches from SKMEI</p>
+                </div>
+                <div class="rating ">
+                    <div class="stars">
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                  <div class="view"> <p>(138) reviews</p></div>
+                 
+                </div>
+                <div class="productPrice ">
+                    <div class="priceNew" id="pri" value="75.0">$ 75.0 <span class="prev-price text-decoration-line-through m-3" >$ 83.0</span></div>
+                </div>
+                <div class="paraImg py-2">
+                    <p>Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <div class="quantity d-flex mb-4 ">
+                    <h5 class="quantityName">Quantity:</h5>
+                    <div class="pro-qty">
+                        <span class="dec qtybtn" id="minus">-</span>
+                        <input type="text" placeholder="1" class="input" id="number" value=1 />
+                        <span class="dec qtybtn" id="plus">+</span>
+                    </div>
+                    <button class="site-btn" type="submit" id="addCart"><i class="fa-regular fa-clipboard" ></i>  Add to Card</button>
+                    <a href="#"><i class="hert fa-regular fa-heart"></i></a>
+                    <a href="#" class="slide"><i class="fa-solid fa-sliders"></i></a>
+
+                </div>
+                <hr>
+                <div class="productWeight ">
+                  <ul class="p-0">
+                    <li class="d-flex">
+                      <p class="me-5">Availability:</p>
+                      <div class="stockCheckbox">
+                        <label for="stockin">
+                          
+In Stock
+                          <input type="checkbox"id="stockin" class="ms-1">
+                         
+                        </label>
+                      </div>
+                    </li>
+                    <li class="d-flex">
+                      <p class="me-5">Availability Color:</p>
+                      <div class="stockRiduo d-flex ">
+                        <form class="d-flex">
+                        
+                          <input type="radio" name="colorRadio" id="red" checked class="red me-1">
+                          
+                        <input type="radio" name="colorRadio" id="black" class="black me-1">
+                        <input type="radio" name="colorRadio" id="blue" class="green me-1"> 
+                   
+                      </form>
+                     
+                        
+                      </div>
+                    </li>
+                  
+                  <li class="d-flex">
+                    <p class="me-5">Availability Color:</p>
+                    <div class="stockSize d-flex ">
+                      
+                      <label class="size me-1" checked>
+                        <input type="radio" name="colorRadio" id="red" checked class="xxl me-1">
+                        xxl</label>
+                      <label class="size me-1">xl</label>
+                      <label class="size me-1">m</label>
+                      <label  class="size me-1">s</label>
+                   
+                      
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="promo d-flex">
+                    <p class="me-5">Promotions:</p>
+                    <p> Free shipping</p>
+                  </div>
+                  </li>
+                  </ul>
+                </div>
+            </div>-->
+
+            </div> 
+
+        </div>
+      </div>
+    </section>
+        <section>
+          <div class="container">
+        <div class="col-md-12 my-5">
+          <div class="desc d-flex">
+          <div class="col-md-3"><hr></div>
+          <div class="col-md-4 navs">
+          
+            <nav>
+              <div class="nav nav-tabs  border-0  text-capitalize id="nav-tab" role="tablist">
+            <button class="nav-link text-capitalize  active ms-4" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+            <button class="nav-link text-capitalize " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Specification</button>
+            <button class="nav-link text-capitalize me-4 " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews </button>
+          </div>
+            </nav>
+          </div>
+          <div class="col-md-3"><hr></div>
+          
+          
+          
+          </div>
+          <div class="tab-content " id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <h5>Description</h5>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret. Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla consequat massa quis enim.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <h5>Specification</h5>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret. Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla consequat massa quis enim.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <h5>Reviews</h5>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret. Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla consequat massa quis enim.</p>
+              <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
+         
+
+    </div>
+    </div>
+  </div>
+  </section>
+    <section>
+      <div class="container">
+        <div class="col-md-12">
+          <div class="related">
+           
+          <div class="RELATED">
+            <h3>RELATED PRODUCTS</h3>
+          </div>
+          <div class="row ">
+           
+          <div class="col-md-3">
+            <div class="imgs">
+         <div class="labelNew">New</div>
+         <div class="product-item">
+            <img src="assets/image/rp-1.jpg" alt="">
+            <div class="bar text-center  ">
+              <a href=""><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
+            <a href="#"> <i class="bar1 fa-regular fa-heart "></i></a>
+             <a href=""> <i class="bar1 fa-solid fa-cart-shopping "></i></a>
+        
+         </div>
+         </div>
+          </div>
+          <a href="#">Buttons tweed blazer</a>
+          <div class="stars">
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+          </div>
+          <p>59.0%</p>
+          </div>
+          <div class="col-md-3">
+            <div class="imgs">
+              <div class="product-item">
+            <img src="assets/image/rp-2.jpg" alt="">
+            <div class="bar text-center  ">
+              <a href=""><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
+            <a href="#"> <i class="bar1 fa-regular fa-heart "></i></a>
+             <a href=""> <i class="bar1 fa-solid fa-cart-shopping "></i></a>
+        
+         </div>
+              </div>
+          </div>
+          <a href="#">Flowy striped skirt</a>
+          <div class="stars">
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+          </div>
+          <p>49.0%</p>
+          </div>
+          <div class="col-md-3">
+            <div class="imgs">
+              <div class="labelNewx">OUT OF STOCK</div>
+              <div class="product-item">
+            <img src="assets/image/rp-3.jpg" alt="">
+            <div class="bar text-center  ">
+              <a href=""><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
+             <a href="#"><i class="bar1 fa-regular fa-heart "></i></a>
+             <a href=""> <i class="bar1 fa-solid fa-cart-shopping "></i></a>
+        
+         </div>
+              </div>
+          </div>
+          <a href="#">Cotton T-Shirt</a>
+          <div class="stars">
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+          </div>
+          <p>59.0%</p>
+          </div>
+          <div class="col-md-3">
+            <div class="imgs">
+              <div class="product-item">
+            <img src="assets/image/rp-4.jpg" alt="">
+            
+            <div class="bar text-center  ">
+              <a href=""><i class="bar1 fa-solid fa-up-right-and-down-left-from-center  "></i></a>
+            <a href="#" > <i class="bar1 fa-regular fa-heart "></i></a>
+             <a href=""> <i class="bar1 fa-solid fa-cart-shopping "></i></a>
+        
+         </div>
+        </div>
+          </div>
+          <a href="#">Slim striped pocket shirt</a>
+          <div class="stars">
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+          </div>
+          <p>59.0%</p>
+          </div>
+           
+            
+          
+        </div>
+      </div>
+      </div>
+        </div>
+      
+    </section>
+
+
+      <footer>
+        <div class="col-md-12 py-5">
+          <div class=" row d-flex ">
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-1.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-2.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-3.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-4.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-5.jpg" alt="" />
+                </div>
+                <div class="insta">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-2 p-0">
+              <div class="instagram">
+                <div class="imgs">
+                  <img src="assets/image/insta-6.jpg" alt="" />
+                </div>
+                <div class="insta d-flex flex-column">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="#">@ashion_shop</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container m-auto">
+          <div class="row d-flex">
+            <div class="col-md-3 ">
+              <div class="footer-about my-5 ">
+                <div class="foot-img">
+                  <a href="#">
+                    <img src="assets/image/logo.png" alt="" />
+                  </a>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt cilisis.
+                </p>
+                <div class="footer-payment d-flex me-3">
+                  <div class="row">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-1.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-2.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-3.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-4.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/image/payment-5.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+      
+                
+              </div>
+            </div>
+            
+            <div class="col-md-2 text-start my-4 ">
+              <div class="footer__widget ">
+                <h6 class="text-start">Quick links</h6>
+                <ul class="p-0 ">
+                 <a href="#"> <li>About</li></a>
+                 <a href="#"> <li>Blogs</li></a>
+                <a href="#">  <li>Contact</li></a>
+                 <a href="#"> <li>FAQ</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 text-start my-4">
+              <div class="footer__widget   ">
+                <h6 class="text-start">ACCOUNT</h6>
+                <ul class="p-0 ">
+                 <a href="#"> <li>My Account</li></a>
+                <a href="#">  <li>Orders Tracking</li></a>
+                 <a href="#"> <li>Checkout</li></a>
+                <a href="#">  <li>Wishlist</li></a>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-md-3 text-start my-4">
+              <div class="footer__widget  ms-2 me-4">
+                <h6 class="text-start">NEWSLETTER</h6>
+               <form action="#">
+                <input type="text" placeholder="Email" >
+                <button class="site-btn" type="submit">Subscribe</button>
+               </form>
+               <div class="icon">
+               <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+               <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+               <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+               <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+      
+               </div>
+               
+              </div>
+            </div>
+            
+          
+      
+          </div>
+          <hr>
+          <p class="par">Copyright &copy;  2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">teamEasyShop</a></p>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.js" integrity="sha512-4aFcnPgoxsyUPgn8gNinplVIEoeBizjYPTpmOaUbC3VZQCsRnduAOch9v0Pn30yTeoWq1rIZByAE4/Gg79VPEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="product.js"></script>
+     
+</body>
+</html>
